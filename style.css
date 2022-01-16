@@ -56,6 +56,9 @@ body {
   background-color: hsla(0, 0%, 100%, 0.75);
   min-height: 100vh;
   font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
@@ -185,15 +188,6 @@ a {
   margin: 15px 0;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 @media (min-width: 1000px) {
 .panel {
   flex-direction: row;
@@ -204,6 +198,6 @@ border-bottom-left-radius: 7px;
 }
 .luxury {
   border-bottom-left-radius: 0;
-  border-top-right-radius: 7px;  
+  border-top-right-radius: 7px;
 }
 }
