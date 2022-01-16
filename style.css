@@ -1,0 +1,209 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsla(0, 0%, 100%, 0.75);
+  min-height: 100vh;
+  font-size: 15px;
+}
+
+a {
+  font-family: 'Lexend Deca', sans-serif;
+  text-decoration: none;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  width: 175px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 40px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+  width: 175px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 40px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  width: 175px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 40px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.class-header {
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.class-text {
+  color: hsla(0, 0%, 100%, 0.75);
+  width: 80%;
+  font-weight: 0;
+  line-height: 2;
+  font-size: 10px;
+  letter-spacing: 2;
+}
+
+.button-sedans {
+  color: hsl(31, 77%, 52%);
+  background-color: hsl(0, 0%, 95%);
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-top: 15px;
+  font-size: 10px;
+  border: 1px solid transparent;
+}
+
+.button-suvs {
+  color: hsl(184, 100%, 22%);
+  background-color: hsl(0, 0%, 95%);
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-top: 15px;
+  font-size: 10px;
+  border: 1px solid transparent;
+}
+
+.button-luxury {
+  color: hsl(179, 100%, 13%);
+  background-color: hsl(0, 0%, 95%);
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-top: 15px;
+  font-size: 10px;
+  border: 1px solid transparent;
+}
+
+.button-sedans:hover {
+  color: hsl(0, 0%, 95%);
+  background-color:hsl(31, 77%, 52%);
+  border: 1px solid hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+.button-suvs:hover {
+  color: hsl(0, 0%, 95%);
+  background-color:hsl(184, 100%, 22%);;
+  border: 1px solid hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+.button-luxury:hover {
+  color: hsl(0, 0%, 95%);
+  background-color:hsl(179, 100%, 13%);
+  border: 1px solid hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+.img-car {
+  width: 25%;
+  height: auto;
+  margin: 15px 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1000px) {
+.panel {
+  flex-direction: row;
+}
+.sedans {
+border-top-right-radius: 0;
+border-bottom-left-radius: 7px;
+}
+.luxury {
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 7px;  
+}
+}
